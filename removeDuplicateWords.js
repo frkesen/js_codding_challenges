@@ -7,15 +7,27 @@ let str = "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma g
 // }
 
 // Solution 2
+// function removeDuplicateWords() {
+//     const words = str.split(" ");
+//     newWords = [];
+//     for (word of words) {
+//         if (!newWords.includes(word))
+//             newWords.push(word);
+// }
+    
+//     return newWords.join(" ");
+// }
+
+// Solution 3
 function removeDuplicateWords() {
     const words = str.split(" ");
-    newWords = [];
+    newWords = "";
     for (word of words) {
         if (!newWords.includes(word))
-            newWords.push(word);
+            newWords += (" " + word) 
 }
     
-    return newWords.join(" ");
+    return newWords;
 }
 
 console.log(removeDuplicateWords()) ;
