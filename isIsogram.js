@@ -1,7 +1,13 @@
 function isIsogram(str){
     const word = str.split("");
-    console.log(word);
-    if (w of word)
-  }
+    const isIsogram = word.every((l,i) => word.indexOf(l) == i);
+    return isIsogram
+}  
 
-  isIsogram("Dermatoglyphics")
+
+
+
+console.log(isIsogram("Dermatoglyphics"));
+console.log(isIsogram("moses"));
+console.log(isIsogram("hello"));
+console.log(isIsogram("world"));
